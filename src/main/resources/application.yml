@@ -1,0 +1,17 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/amazon
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+aws:
+  accessKeyId: ${ACCESS_KEY}
+  secretKey: ${SECRET_KEY}
+  s3:
+    bucketName: shopsport
